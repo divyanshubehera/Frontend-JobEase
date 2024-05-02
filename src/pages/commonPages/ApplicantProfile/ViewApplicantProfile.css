@@ -1,0 +1,241 @@
+.view-profile-container .container {
+    background-color: var(--gray-col);
+    margin-top: 2rem;
+}
+
+.view-profile-container .profile {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.view-profile-container .profile .profile-pic {
+    height: 66vh;
+    position: relative;
+    background-color: var(--white-col);
+}
+
+.view-profile-container .profile .profile-pic img {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    outline: 10px solid var(--white-col);
+}
+
+.view-profile-container .profile .profile-pic .top {
+    height: 33vh;
+    background-color: var(--gray-col);
+    background-image: url('../../../assets/profile-bg.jpg');
+    background-size: cover;
+}
+
+.view-profile-container .profile .profile-pic .bottom {
+    height: 33vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.view-profile-container .profile .profile-pic .bottom .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-right: 5rem;
+}
+
+.view-profile-container .profile .profile-pic .bottom .content .status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.view-profile-container .profile .profile-pic .bottom .content .status div {
+    background-color: var(--blue-col);
+    padding: 0.3rem 0.7rem;
+    border-radius: 30px;
+    color: var(--white-col);
+}
+
+.view-profile-container .profile .others {
+    width: 100%;
+}
+.view-profile-container .profile .others .basic-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--white-col);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.view-profile-container .profile .others .basic-info h1{
+    font-size: 1.8rem;
+}
+.view-profile-container .profile .others .basic-info .links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.1rem;
+}
+.view-profile-container .profile .others .basic-info .links a{
+    text-decoration: none;
+    color: var(--blue-col);
+    display: flex;
+    align-items: center;
+}
+.view-profile-container .profile .others .basic-info .links a span{
+    margin-left: 10px;
+}
+
+.view-profile-container .profile .others .basic-info .current-address,
+.view-profile-container .profile .others .basic-info .permanent-address{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.view-profile-container .profile .others .education,
+.view-profile-container .profile .others .project,
+.view-profile-container .profile .others .internship,
+.view-profile-container .profile .others .achievement,
+.view-profile-container .profile .others .experience {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--white-col);
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.view-profile-container .profile .others .project .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.view-profile-container .profile .others .education .title,
+.view-profile-container .profile .others .project .title,
+.view-profile-container .profile .others .internship .title,
+.view-profile-container .profile .others .achievement .title,
+.view-profile-container .profile .others .experience .title {
+    padding: 1rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.view-profile-container .profile .others .education .item,
+.view-profile-container .profile .others .project .item,
+.view-profile-container .profile .others .internship .item,
+.view-profile-container .profile .others .achievement .item,
+.view-profile-container .profile .others .experience .item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 0.3rem;
+}
+.view-profile-container .profile .others .project .item a{
+    color: var(--blue-col);
+}
+
+.view-profile-container .container .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.view-profile-container .container .sidebar .edit {
+    background-color: var(--white-col);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 60vh;
+    padding: 1rem;
+}
+
+.view-profile-container .container .sidebar .edit .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.view-profile-container .container .sidebar .edit .item p {
+    color: gray;
+}
+
+.view-profile-container .container .sidebar .edit .item .edit-link {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--blue-col);
+    text-decoration: none;
+}
+.view-profile-container .container .sidebar .edit .item button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--blue-col);
+}
+
+.view-profile-container .container .sidebar .profile-contact {
+    background-color: var(--white-col);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 1rem;
+    height: 20vh;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .view-profile-container .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .view-profile-container .profile {
+        width: 100%;
+    }
+
+    .view-profile-container .profile .profile-pic {
+        height: 73vh;
+        width: 100%;
+    }
+
+    .view-profile-container .profile .profile-pic img {
+        left: 50%;
+        top: 35%;
+    }
+
+    .view-profile-container .profile .profile-pic .bottom {
+        height: 40vh;
+    }
+    .view-profile-container .sidebar{
+        width: 100%;
+    }
+}

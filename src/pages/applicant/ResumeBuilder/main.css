@@ -1,0 +1,11 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--white-col);
+}
+.main input{
+  border-radius: 30px;
+  border: none;
+  background-color: var(--white-col);
+}

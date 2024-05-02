@@ -1,0 +1,101 @@
+.post-job {
+    width: 100%;
+}
+
+.post-job .banner {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.post-job .banner .head-font{
+    font-size: 2rem;
+}
+
+.post-job .banner .head-font span {
+    color: var(--blue-col);
+}
+
+.post-job .banner p {
+    letter-spacing: 2px;
+}
+
+.post-job .container {
+    padding: 2rem 0;
+}
+
+.post-job .container form {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post-job .container form input,
+.post-job .container form select,
+.post-job .container form textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: var(--white-col);
+    margin: 1rem 0;
+    border-radius: 30px;
+}
+
+.post-job .container form .creatable{
+    margin: 1rem 0;
+}
+.post-job .container form .creatable input {
+    padding: 0.7rem 1rem;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.post-job .container form textarea::placeholder {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 1rem;
+}
+
+
+.post-job .container form .top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.post-job .container form .top .part-1,
+.post-job .container form .top .part-2{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+}
+.post-job .container form .bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:850px) {
+    .post-job .container form .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .post-job .banner p{
+        font-size: 0.7rem;
+    }
+}

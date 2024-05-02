@@ -1,0 +1,84 @@
+.estimate-salary {
+    background-color: var(--gray-col);
+}
+
+.estimate-salary .hero {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--white-col);
+}
+
+.estimate-salary .hero .head-font {
+    font-size: 2rem;
+}
+
+.estimate-salary .hero .head-font span {
+    color: var(--blue-col);
+}
+
+.estimate-salary .hero p {
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.estimate-salary .hero .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.estimate-salary .hero .search input {
+    padding: 0.4rem 1rem;
+    width: 60%;
+    border: 1px solid rgb(201, 200, 200);
+}
+
+.estimate-salary .container .salaries {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    background-color: var(--gray-col);
+}
+
+.estimate-salary .container .salaries .salaries-container {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.estimate-salary .container .salaries .salaries-container .item {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--gray-col);
+    padding: 1rem;
+    gap: 1rem;
+    width: 300px;
+    background-color: var(--white-col);
+    border-radius: 30px 40px 50px 20px;
+}
+.estimate-salary .container .salaries .salaries-container .item button.blue-btn{
+    border-radius: 30px;
+}
+
+.estimate-salary .container .salaries .salaries-container .item .avg-sal span {
+    color: var(--blue-col);
+}
+
+.estimate-salary .container .salaries .salaries-container .item .links a {
+    color: gray;
+    margin: 0 5px;
+}

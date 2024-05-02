@@ -1,0 +1,40 @@
+.email{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-col);
+}
+.email .company-email-form{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--white-col);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.email form input{
+    width: 80%;
+}
+.email form textarea{
+    width: 80%;
+    height: 30vh;
+    border: 1px solid rgb(197, 196, 196);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.email form .blue-btn{
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .email .company-email-form{
+        width: 90%;
+    }
+}

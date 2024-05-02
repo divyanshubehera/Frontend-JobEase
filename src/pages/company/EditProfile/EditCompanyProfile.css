@@ -1,0 +1,101 @@
+.company-profile-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .company-profile-form form {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  
+  .company-profile-form .left-grid,
+  .company-profile-form .right-grid {
+    padding: 2rem;
+  }
+  .company-profile-form .right-grid{
+    margin-top: 2rem;
+  }
+  
+  .company-profile-form .left-grid .avatar-display {
+    overflow: hidden;
+    height: 350px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+  }
+  
+  .company-profile-form .left-grid .avatar-display img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .company-profile-form .left-grid .background-display {
+    overflow: hidden;
+    height: 350px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+  }
+  
+  .company-profile-form .left-grid .background-display img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .company-profile-form .status {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .company-profile-form .status .label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .company-profile-form select {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: var(--white-col);
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .company-profile-form input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: var(--white-col);
+    margin-bottom: 1rem;
+  }
+  .company-profile-form textarea{
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 200px;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .company-profile-form input[type="file"] {
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: var(--white-col);
+    border: none;
+  }
+
+  
+  .company-profile-form button[type=submit] {
+    margin-top: 2rem;
+    float: right;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .company-profile-form form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+

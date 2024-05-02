@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+}
+:root{
+  --white-col: white;
+  --blue-col: #239CE2;
+  --gray-col: rgb(241, 241, 241);
+  --black-col: rgb(19, 18, 18);
+}
+
+.text-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.head-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.white-btn {
+  background-color: var(--white-col);
+  border: 0.5px solid var(--gray-col);
+  color: var(--black-col);
+}
+
+.blue-btn {
+  background-color: var(--blue-col);
+  color: var(--white-col);
+  border: none;
+  transition: 0.3s;
+}
+.blue-btn:hover{
+  background-color: #60bff5;
+}
+.purple-btn {
+  background-color: purple;
+  color: var(--white-col);
+  border: none;
+}
+

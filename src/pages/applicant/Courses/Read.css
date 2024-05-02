@@ -1,0 +1,11 @@
+.pdf-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pdf-div .doc{
+    margin-top: 2.5rem;
+}

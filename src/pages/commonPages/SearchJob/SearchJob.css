@@ -1,0 +1,220 @@
+.hero {
+    background-color: var(--white-col);
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    gap: 2rem;
+}
+
+.hero .container .text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero .container .text h1 span {
+    color: var(--blue-col);
+}
+
+.hero .container .search {
+    display: flex;
+    align-items: center;
+}
+
+.hero .container .search .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hero .container .search .wrapper .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    border-right: none;
+}
+
+.hero .container .search .wrapper input {
+    height: 30px;
+    width: 35vw;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-left: none;
+    border-radius: 0;
+    position: relative;
+}
+
+.hero .container .search button.blue-btn {
+    border-radius: 0 5px 5px 0;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .hero .container .search {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .hero .container .search .wrapper {
+        width: 100%;
+    }
+
+    .hero .container .search .wrapper input {
+        width: 100%;
+    }
+}
+
+.home main {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+
+.home main .container .input-group span {
+    margin-left: 1rem;
+}
+
+
+.home main .container .jobs {
+    background-color: var(--white-col);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.home main .container .jobs .job-result {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home main .container .jobs .job-result .job {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border: 1px solid var(--gray-col);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+.home main .container .jobs .job-result .job .job-desc {
+    max-height: 6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.home main .container .jobs .job-result .job .img-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.home main .container .jobs .job-result .job img {
+    width: 100px;
+    height: 72px;
+    object-fit: cover;
+}
+
+.home main .container .jobs .job-result .job .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.home main .container .jobs .job-result .job .content a {
+    color: var(--blue-col);
+    text-decoration: none;
+}
+
+.home main .container .jobs .job-result .job .content p {
+    text-align: justify;
+    line-height: 30px;
+}
+.home main .container .jobs .job-result .job .content .company-name{
+    text-transform: uppercase;
+}
+.home main .container .jobs .job-result .job .content .job-title{
+    text-transform: capitalize;
+}
+.home main .container .jobs .job-result .job .content .info,
+.home main .container .jobs .job-result .job .content .job-desc{
+    color: gray;
+    text-align: justify;
+    line-height: 30px;
+}
+.home main .container .jobs .job-result .job .content .info{
+    text-transform: capitalize;
+}
+
+.home main .container .sidebar {
+    background-color: var(--white-col);
+    padding: 0.5rem;
+    border-radius: 5px;
+    height: 160vh;
+}
+
+
+.home main .container .sidebar .email-me {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home main .container .sidebar .email-me p {
+    color: gray;
+    line-height: 30px;
+}
+
+.home main .container .sidebar .email-me input,
+.home main .container .sidebar .email-me button {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+
+.home main .container .sidebar .get-noticed {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home main .container .sidebar .get-noticed p {
+    color: gray;
+    line-height: 30px;
+}
+
+.home main .container .sidebar .get-noticed button {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .home .hero .text h1{
+        font-size: 1.5rem;
+    }
+    .home main .container .jobs .job-result{
+        padding: 0.2rem;
+    }
+    .home main .container .jobs .job-result .job{
+        width: 100%;
+    }
+    .home main .container .jobs .job-result .job img{
+        width: 60px;
+        height: 35px;
+    }
+}

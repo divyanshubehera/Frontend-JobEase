@@ -1,0 +1,145 @@
+.pdf-upload {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--gray-col);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pdf-upload .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    background-color: whitesmoke;
+    height: 90%;
+    border: 5px solid var(--white-col);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pdf-upload .container {
+    padding: 0 2rem;
+}
+
+
+
+.pdf-upload .form {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pdf-upload .form form {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.pdf-upload .form .head-font {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.pdf-upload .form .head-font span {
+    font-size: 2rem;
+    color: var(--blue-col);
+}
+
+
+
+.pdf-upload .form form input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.1rem 0;
+    font-size: 1rem;
+}
+
+.pdf-upload .form form input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.pdf-upload .form form input::-ms-input-placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.pdf-upload .form form label {
+    background-color: var(--white-col);
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 1.4rem;
+    padding-left: 1rem;
+}
+
+.pdf-upload .form form input[type=file] {
+    display: none;
+}
+
+.pdf-upload .form form .blue-btn {
+    width: 100%;
+    padding: 1rem;
+}
+
+.pdf-upload .form form a {
+    text-decoration: none;
+    color: var(--blue-col);
+}
+
+.pdf-upload .container .img {
+    padding: 2rem 0.8rem;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.pdf-upload .container .img img {
+    width: 100%;
+    height: 100%;
+    background-color: #8deeff;
+    border-radius: 20px;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .pdf-upload .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .pdf-upload .container {
+        flex-direction: column-reverse;
+    }
+
+    .pdf-upload .container .form {
+        height: 64vh;
+        width: 100%;
+    }
+    .pdf-upload .container .img{
+        display: none;
+    }
+
+}
